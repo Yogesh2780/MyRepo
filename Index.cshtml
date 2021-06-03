@@ -1,0 +1,31 @@
+﻿<div>
+    @using (Html.BeginForm("SearchNumber", "Home", FormMethod.Post))
+    {
+
+        <table>
+            <tr>
+                <td>Enter Divisor</td>
+                <td>@Html.TextBox("Divisor")</td>
+            </tr>
+
+            <tr>
+                <td>Enter Position/Number</td>
+                <td>@Html.TextBox("Number")</td>
+            </tr>
+
+            <tr>
+                <td>Enter series Limit</td>
+                <td>@Html.TextBox("SeriesLength")</td>
+            </tr>
+            
+            <tr>
+                <td colspan="2">@Html.Label((string)ViewBag.Result)</td>
+
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Submit form" /></td>
+                
+            </tr>
+        </table>
+    }
+</div>
